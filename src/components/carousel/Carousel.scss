@@ -1,0 +1,43 @@
+.embla {
+  position: relative;
+  overflow: hidden;
+  padding: 0 20px;
+
+  &__container {
+    display: flex;
+  }
+
+  &__slide {
+    position: relative;
+  }
+
+  &__button {
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+    cursor: pointer;
+
+    &--prev {
+      left: 0;
+      ;
+    }
+
+    &--next {
+      right: 0;
+    }
+  }
+
+  &__image {
+    background: url('./carousel-arrows-stripe.png') no-repeat;
+    display: inline-block;
+    width: 32px;
+    height: 42px;
+
+    &--prev {
+      background-position: 0 -80px;
+    }
+  }
+}
